@@ -7,9 +7,10 @@ edition = "2021"
 
 [dependencies]
 cpal = { git = "https://github.com/RustAudio/cpal.git", features = ["asio"] }
-config = { version = "0.13.4", features = [] }
+config = { version = "0.14.0", features = [] }
 anyhow = "1.0.75"
 time = "0.3.30"
 clap = "4.4.11"
 hound = "3.5.1"
-rustpotter = "=3.0.2"
+#rustpotter = "=3.0.2"
+reqwest = { version = "0.12.4", features = ["blocking"] }

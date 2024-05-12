@@ -1,0 +1,15 @@
+[package]
+name = "audio-recorder"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+cpal = { git = "https://github.com/RustAudio/cpal.git", features = ["asio"] }
+config = { version = "0.13.4", features = [] }
+anyhow = "1.0.75"
+time = "0.3.30"
+clap = "4.4.11"
+hound = "3.5.1"
+rustpotter = "=3.0.2"

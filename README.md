@@ -16,6 +16,7 @@ allows users to record audio, transcribe it into text, and then generate a shopp
    the `bring` command.
 
 ## Prerequisites
+
 This project only works on Windows.
 You will need to install my bring cli tool to run this project. You can find
 it [here](https://github.com/ViktorWelbers/Bring-CLI).
@@ -46,3 +47,9 @@ cargo run
 The project has several dependencies, which are listed in the `Cargo.lock` file for the Rust application and in
 the `requirements.txt` file for the Python application. The dependencies include several crates and Python packages for
 handling audio, making HTTP requests, and working with machine learning models.
+
+## Todo
+
+1. Export the functionality of the Bring! Client to Python so that it can be used on other platforms.
+2. Scrap the Rust application and use Python for the whole project.
+3. Add a Wakeword detection model to the project.

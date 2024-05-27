@@ -6,7 +6,7 @@ mod wav_recorder;
 fn main() -> Result<(), anyhow::Error> {
     let file_name = "output.wav";
     let wav_path =
-        wav_recorder::record_wav_from_microphone(Duration::from_secs(10), Some(file_name));
+        wav_recorder::record_wav_from_microphone(Duration::from_secs(7), Some(file_name));
     println!("Wav file saved to: {:?}", wav_path);
     let result = http_client::get_file(file_name);
     let item = result.unwrap();

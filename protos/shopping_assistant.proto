@@ -1,0 +1,16 @@
+syntax = "proto3";
+// The shopping assistant service definition.
+service ShoppingAssistant {
+  // Sends a file name and receives a shopping list item.
+  rpc PostFileName (FileNameRequest) returns (ShoppingListItemResponse);
+}
+
+// The request message containing the file name.
+message FileNameRequest {
+  string file_name = 1;
+}
+
+// The response message containing the shopping list item.
+message ShoppingListItemResponse {
+  string item = 1;
+}
